@@ -7,7 +7,7 @@ function LogIn() {
                 <h1>Log In</h1>
                 <label>Username:</label>
                 <br/>
-                <input name="username" value={name} onChange={onChange}></input>
+                <input id='usernameInput'></input>
                 <br/>
                 <br/>
                 <label>Password:</label>
@@ -20,10 +20,10 @@ function LogIn() {
         );
 }
 
-function OnLoginBtnClick() {
-    let loginData = {username, password};
-    loginData.username = usernameInput.value;
-}
+// function OnLoginBtnClick() {
+//     let loginData = {username, password};
+//     loginData.username = usernameInput.value;
+// }
 
 function useDate() {
     const [time, setTime] = useState(new Date());
